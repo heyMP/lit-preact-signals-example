@@ -1,0 +1,142 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/**
+ * View Transitions
+ */
+my-element {
+}
+
+my-element::part(base) {
+  display: contents;
+}
+
+my-element::part(base) {}
+
+@keyframes slide-up {
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-out {
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99%{
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  0%{
+    opacity: 0;
+    transform: translate(100%);
+  }
+  100%{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  0%{
+    transform: translate(0);
+    opacity: 1;
+  }
+  99%{
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes flip-in {
+  0%{
+    opacity: 0;
+    transform: rotateX(-180deg);  
+  }
+  100%{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flip-out {
+  0%{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  99%{
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+/* @starting-style { */
+/*   my-element::part(list) { */
+/*     opacity: 0; */
+/*   } */
+/* } */
+
+/**/
+/* ::view-transition-old(my-element) { */
+/*   animation-duration: 5s; */
+/* } */
+/**/
+/* ::view-transition-new(my-element) { */
+/*   animation-duration: 5s; */
+/* } */
+
+
